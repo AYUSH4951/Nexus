@@ -43,7 +43,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+
+os.makedirs("static", exist_ok=True)
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 templates = Jinja2Templates(directory="./templates")
 
 @app.get("/", tags=["authentication"])
