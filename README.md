@@ -1,4 +1,4 @@
-# Network Security Phishing Detection System
+# Nexus - Network Security Phishing Detection System
 
 An end-to-end Machine Learning and MLOps system that detects phishing URLs and malicious network traffic. The project features automated data ingestion from MongoDB Atlas, data validation and drift detection, missing-value imputation, hyperparameter search across multiple classification algorithms, experiment tracking with MLflow/DagsHub, a FastAPI prediction service, and full CI/CD deployment via Docker, GitHub Actions, and Render.
 
